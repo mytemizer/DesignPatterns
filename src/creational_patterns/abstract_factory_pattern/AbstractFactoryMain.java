@@ -6,9 +6,6 @@ import creational_patterns.abstract_factory_pattern.factories.ModernFurnitureFac
 import creational_patterns.abstract_factory_pattern.model.Chair;
 import creational_patterns.abstract_factory_pattern.model.Sofa;
 
-import static creational_patterns.abstract_factory_pattern.FurnitureStyle.ANTIQUE;
-import static creational_patterns.abstract_factory_pattern.FurnitureStyle.MODERN;
-
 public class AbstractFactoryMain {
 
     private final FurnitureFactory factory;
@@ -20,17 +17,14 @@ public class AbstractFactoryMain {
     }
 
     public static void testAbstractFactoryPattern() {
-        AbstractFactoryMain abstractFactoryMain;
+        operateFactory(FurnitureStyle.MODERN);
+        operateFactory(FurnitureStyle.ANTIQUE);
+    }
 
-        abstractFactoryMain = new AbstractFactoryMain(MODERN);
+    private static void operateFactory(FurnitureStyle style) {
+        AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain(style);
         abstractFactoryMain.createFurniture();
         abstractFactoryMain.useFurniture();
-
-
-        abstractFactoryMain = new AbstractFactoryMain(ANTIQUE);
-        abstractFactoryMain.createFurniture();
-        abstractFactoryMain.useFurniture();
-
     }
 
     private FurnitureFactory createFactory(FurnitureStyle style) {
