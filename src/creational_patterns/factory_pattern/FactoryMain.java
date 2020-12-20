@@ -2,7 +2,7 @@ package creational_patterns.factory_pattern;
 
 import creational_patterns.factory_pattern.logistic.Logistic;
 import creational_patterns.factory_pattern.logistic.RoadLogistic;
-import creational_patterns.factory_pattern.logistic.ShipLogistic;
+import creational_patterns.factory_pattern.logistic.SeaLogistic;
 import creational_patterns.factory_pattern.model.Transport;
 
 public class FactoryMain {
@@ -30,7 +30,7 @@ public class FactoryMain {
     private Logistic getLogistic(TransportType type) {
         switch (type) {
             case SHIP:
-                return new ShipLogistic();
+                return new SeaLogistic();
             case TRUCK:
                 return new RoadLogistic();
             default:
