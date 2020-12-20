@@ -1,1 +1,1 @@
-![plot](../../uml/factory_pattern.png)
+![plot](../../../uml/factory_pattern.png)
