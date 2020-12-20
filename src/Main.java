@@ -3,8 +3,11 @@ import creational_patterns.factory_pattern.FactoryMain;
 
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("*** FACTORY DESIGN PATTERN ***");
         FactoryMain.testFactoryPattern();
 
+        System.out.println("*** ABSTRACT FACTORY DESIGN PATTERN ***");
         AbstractFactoryMain.testAbstractFactoryPattern();
     }
 }
