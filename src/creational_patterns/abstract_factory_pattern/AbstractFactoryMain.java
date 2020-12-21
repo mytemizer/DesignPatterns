@@ -16,7 +16,7 @@ public class AbstractFactoryMain {
         factory = createFactory(style);
     }
 
-    public static void testAbstractFactoryPattern() {
+    public static void runAbstractFactoryPattern() {
         operateFactory(FurnitureStyle.MODERN);
         operateFactory(FurnitureStyle.ANTIQUE);
 

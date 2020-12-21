@@ -17,7 +17,7 @@ public class BuilderMain {
         this.carBuilder = new CarBuilder();
     }
 
-    public static void testBuilderPattern() {
+    public static void runBuilderPattern() {
         BuilderMain builderMain = new BuilderMain();
         builderMain.operate();
     }

@@ -7,7 +7,7 @@ import creational_patterns.factory_pattern.model.Transport;
 
 public class FactoryMain {
 
-    public static void testFactoryPattern() {
+    public static void runFactoryPattern() {
         FactoryMain factoryMain = new FactoryMain();
         Transport transport;
 
