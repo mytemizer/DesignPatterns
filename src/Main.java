@@ -11,7 +11,6 @@ public class Main {
         System.out.println("*** ABSTRACT FACTORY DESIGN PATTERN ***");
         AbstractFactoryMain.testAbstractFactoryPattern();
 
-        System.out.println();
         System.out.println("*** BUILDER DESIGN PATTERN ***");
         BuilderMain.testBuilderPattern();
     }

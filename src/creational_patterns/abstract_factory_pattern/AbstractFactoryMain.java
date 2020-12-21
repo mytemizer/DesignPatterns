@@ -19,6 +19,8 @@ public class AbstractFactoryMain {
     public static void testAbstractFactoryPattern() {
         operateFactory(FurnitureStyle.MODERN);
         operateFactory(FurnitureStyle.ANTIQUE);
+
+        System.out.println();
     }
 
     private static void operateFactory(FurnitureStyle style) {
