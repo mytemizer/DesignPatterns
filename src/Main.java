@@ -1,4 +1,5 @@
 import creational_patterns.abstract_factory_pattern.AbstractFactoryMain;
+import creational_patterns.builder_pattern.BuilderMain;
 import creational_patterns.factory_pattern.FactoryMain;
 
 public class Main {
@@ -9,5 +10,9 @@ public class Main {
 
         System.out.println("*** ABSTRACT FACTORY DESIGN PATTERN ***");
         AbstractFactoryMain.testAbstractFactoryPattern();
+
+        System.out.println();
+        System.out.println("*** BUILDER DESIGN PATTERN ***");
+        BuilderMain.testBuilderPattern();
     }
 }
