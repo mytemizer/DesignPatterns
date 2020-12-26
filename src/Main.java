@@ -2,6 +2,7 @@ import creational_patterns.abstract_factory_pattern.AbstractFactoryMain;
 import creational_patterns.builder_pattern.BuilderMain;
 import creational_patterns.factory_pattern.FactoryMain;
 import creational_patterns.protorype_pattern.PrototypeMain;
+import creational_patterns.singleton_pattern.SingletonMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +22,9 @@ public class Main {
 
         System.out.println("*** PROTOTYPE DESIGN PATTERN ***");
         PrototypeMain.runPrototypePattern();
+
+        System.out.println("*** SINGLETON DESIGN PATTERN ***");
+        SingletonMain.runSingletonPattern();
 
     }
 }
