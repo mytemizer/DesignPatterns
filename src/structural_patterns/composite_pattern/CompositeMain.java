@@ -21,5 +21,7 @@ public class CompositeMain {
 
         imageEditor.groupSelected(compoundGraphic);
 
+        System.out.println();
+
     }
 }
