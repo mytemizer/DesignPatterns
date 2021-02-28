@@ -8,6 +8,7 @@ import structural_patterns.bridge_pattern.BridgeMain;
 import structural_patterns.composite_pattern.CompositeMain;
 import structural_patterns.decorator_pattern.DecoratorMain;
 import structural_patterns.facade_pattern.FacadeMain;
+import structural_patterns.flyweight_pattern.FlyweightMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,6 +51,9 @@ public class Main {
 
         System.out.println("*** FACADE DESIGN PATTERN ***");
         FacadeMain.runFacadePattern();
+
+        System.out.println("*** FLYWEIGHT DESIGN PATTERN ***");
+        FlyweightMain.runFlyweightPattern();
 
     }
 }

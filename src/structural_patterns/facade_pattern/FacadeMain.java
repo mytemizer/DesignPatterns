@@ -13,5 +13,7 @@ public class FacadeMain {
 
         VideoFile videoFile = videoConverter.convert("filename", ".mp4");
         videoFile.save();
+
+        System.out.println();
     }
 }
