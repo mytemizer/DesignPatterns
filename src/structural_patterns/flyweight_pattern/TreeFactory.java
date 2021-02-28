@@ -1,27 +1,22 @@
 package structural_patterns.flyweight_pattern;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class TreeFactory {
-    public static ArrayList<TreeType> treeTypes = new ArrayList<>();
+    public static HashMap<String, TreeType> treeTypes = new HashMap<>();
 
     public static TreeType getTreeType(String name, String color, String texture) {
-        TreeType treeType = null;
-        for (TreeType tempTreetype:
-             treeTypes) {
-            if (tempTreetype.getName().equals(name) &&
-                    tempTreetype.getColor().equals(color) &&
-                    tempTreetype.getTexture().equals(texture)) {
-                treeType = tempTreetype;
-                System.out.println("Same Tree Type Found!!!");
-            }
-        }
+
+        String key = name + "_" + color + "_" + texture;
+        TreeType treeType = treeTypes.get(key);
 
         if (treeType == null) {
             treeType = new TreeType(name, color, texture);
+            treeTypes.put(key, treeType);
+        } else {
+            System.out.println("Same Tree Type Found!!!");
         }
 
-        treeTypes.add(treeType);
         return treeType;
     }
 }
