@@ -5,6 +5,7 @@ import creational_patterns.protorype_pattern.PrototypeMain;
 import creational_patterns.singleton_pattern.SingletonMain;
 import structural_patterns.adapter_pattern.AdapterMain;
 import structural_patterns.bridge_pattern.BridgeMain;
+import structural_patterns.composite_pattern.CompositeMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -38,6 +39,9 @@ public class Main {
 
         System.out.println("*** BRIDGE DESIGN PATTERN ***");
         BridgeMain.runBridgePattern();
+
+        System.out.println("*** COMPOSITE DESIGN PATTERN ***");
+        CompositeMain.runCompositePattern();
 
     }
 }

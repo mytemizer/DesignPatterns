@@ -25,5 +25,6 @@ public class BridgeMain {
         remote2.channelUp();
         remote2.volumeUp();
 
+        System.out.println();
     }
 }
