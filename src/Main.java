@@ -7,6 +7,7 @@ import structural_patterns.adapter_pattern.AdapterMain;
 import structural_patterns.bridge_pattern.BridgeMain;
 import structural_patterns.composite_pattern.CompositeMain;
 import structural_patterns.decorator_pattern.DecoratorMain;
+import structural_patterns.facade_pattern.FacadeMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -46,6 +47,9 @@ public class Main {
 
         System.out.println("*** DECORATOR DESIGN PATTERN ***");
         DecoratorMain.runDecoratorPattern();
+
+        System.out.println("*** FACADE DESIGN PATTERN ***");
+        FacadeMain.runFacadePattern();
 
     }
 }
