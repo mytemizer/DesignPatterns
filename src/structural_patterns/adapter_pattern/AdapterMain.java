@@ -26,7 +26,7 @@ public class AdapterMain {
         System.out.println("Small square peg fits Round Hole -> " + hole.fits(smallSqrPegAdapter));
         System.out.println("Large square peg fits Round Hole -> " + hole.fits(largeSqrPegAdapter));
 
-
+        System.out.println();
     }
 
 }

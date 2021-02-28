@@ -4,10 +4,11 @@ import creational_patterns.factory_pattern.FactoryMain;
 import creational_patterns.protorype_pattern.PrototypeMain;
 import creational_patterns.singleton_pattern.SingletonMain;
 import structural_patterns.adapter_pattern.AdapterMain;
+import structural_patterns.bridge_pattern.BridgeMain;
 
 public class Main {
     public static void main(String[] args) {
-        //runCreationalPatterns();
+        runCreationalPatterns();
 
         runStructuralPatterns();
     }
@@ -34,6 +35,9 @@ public class Main {
     private static void runStructuralPatterns() {
         System.out.println("*** ADAPTER DESIGN PATTERN ***");
         AdapterMain.runAdapterPattern();
+
+        System.out.println("*** BRIDGE DESIGN PATTERN ***");
+        BridgeMain.runBridgePattern();
 
     }
 }

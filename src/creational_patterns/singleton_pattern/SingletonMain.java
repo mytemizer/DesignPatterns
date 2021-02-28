@@ -10,6 +10,8 @@ public class SingletonMain {
     public void doOperations() {
         doInsertion();
         doDeletion();
+        System.out.println();
+
     }
 
     private void doDeletion() {
