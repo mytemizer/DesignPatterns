@@ -2,30 +2,28 @@ package structural_patterns.decorator_pattern;
 
 public class DecoratorMain {
 
+    private boolean compressionEnabled = true;
+    private boolean encryptionEnabled = true;
+
     public static void runDecoratorPattern() {
         DecoratorMain decoratorMain = new DecoratorMain();
         decoratorMain.doOperations();
     }
 
     private void doOperations() {
-        FileDataSource fileDataSource = new FileDataSource("fileName.dat");
+        DataSource fileDataSource = new FileDataSource("fileName.dat");
+
+        fileDataSource = new DataSourceDecorator(fileDataSource);
+
+        if (compressionEnabled) {
+            fileDataSource = new CompressionDecorator(fileDataSource);
+        }
+
+        if (encryptionEnabled) {
+            fileDataSource = new EncryptionDecorator(fileDataSource);
+        }
+
         fileDataSource.writeData("data");
-        System.out.println();
-
-        DataSourceDecorator dataSourceDecorator = new DataSourceDecorator(fileDataSource);
-        dataSourceDecorator.writeData("data");
-        System.out.println();
-
-        CompressionDecorator compressionDecorator = new CompressionDecorator(dataSourceDecorator);
-        compressionDecorator.writeData("data");
-        System.out.println();
-
-        EncryptionDecorator encryptionDecorator = new EncryptionDecorator(compressionDecorator);
-        encryptionDecorator.writeData("data");
-        System.out.println();
-
-
-        encryptionDecorator.readData();
         System.out.println();
     }
 }
