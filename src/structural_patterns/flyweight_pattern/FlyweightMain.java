@@ -1,7 +1,5 @@
 package structural_patterns.flyweight_pattern;
 
-import java.util.ArrayList;
-
 public class FlyweightMain {
 
     public static void runFlyweightPattern() {
@@ -24,6 +22,8 @@ public class FlyweightMain {
         forest.plantTree(3, 2, "White Ash Tree", "Green", "a");
 
         forest.draw();
+
+        System.out.println();
     }
 
 }

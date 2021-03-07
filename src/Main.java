@@ -9,6 +9,7 @@ import structural_patterns.composite_pattern.CompositeMain;
 import structural_patterns.decorator_pattern.DecoratorMain;
 import structural_patterns.facade_pattern.FacadeMain;
 import structural_patterns.flyweight_pattern.FlyweightMain;
+import structural_patterns.proxy_pattern.ProxyMain;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,6 +55,9 @@ public class Main {
 
         System.out.println("*** FLYWEIGHT DESIGN PATTERN ***");
         FlyweightMain.runFlyweightPattern();
+
+        System.out.println("*** PROXY DESIGN PATTERN ***");
+        ProxyMain.runProxyPattern();
 
     }
 }
